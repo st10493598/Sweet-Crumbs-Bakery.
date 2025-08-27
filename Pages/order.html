@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Sweet Crumbs Bakery</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Order Your Baked Goods</h1>
+        <nav>
+            <ul>
+                  <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Online Pre-Order Form</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="item">Select Item:</label>
+                    <select id="item" name="item" required>
+                        <option value="">Please select an item</option>
+                        <option value="chocolate_cake">Chocolate Cake - R120</option>
+                        <option value="vanilla_cake">Vanilla Cake - R110</option>
+                        <option value="red_velvet_cake">Red Velvet Cake - R130</option>
+                        <option value="carrot_cake">Carrot Cake - R125</option>
+                        <option value="vanilla_cupcake">Vanilla Cupcake - R15 each</option>
+                        <option value="chocolate_cupcake">Chocolate Cupcake - R16 each</option>
+                        <option value="red_velvet_cupcake">Red Velvet Cupcake - R18 each</option>
+                        <option value="assorted_dozen">Assorted Dozen Cupcakes - R180</option>
+                        <option value="blueberry_muffin">Blueberry Muffin - R12 each</option>
+                        <option value="chocolate_chip_muffin">Chocolate Chip Muffin - R14 each</option>
+                        <option value="banana_nut_muffin">Banana Nut Muffin - R13 each</option>
+                        <option value="custom_cake">Custom Cake (Contact for pricing)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Pickup/Delivery Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Special Instructions:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Sweet Crumbs Bakery. All rights reserved.</p>
+    </footer>
+    
+  
+</body>
+</html>
